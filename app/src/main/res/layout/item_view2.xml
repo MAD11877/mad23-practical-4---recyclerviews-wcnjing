@@ -25,7 +25,7 @@
             android:clickable="true"/>
 
         <LinearLayout
-            android:id="@+id/content_devider"
+            android:id="@+id/content_divider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -59,7 +59,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/big_image2"
+        android:id="@+id/large"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_weight="1"

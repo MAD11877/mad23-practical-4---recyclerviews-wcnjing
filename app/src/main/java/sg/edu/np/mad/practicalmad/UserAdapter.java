@@ -24,7 +24,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     }
 
     public class UserViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView clickableImage;
+        private final ImageView imagebtn;
 
         private final ImageView iconImage;
         private final TextView nameView;
@@ -33,12 +33,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
         public UserViewHolder(View view) {
             super(view);
-            clickableImage = view.findViewById(R.id.clickable_image);
-            iconImage = view.findViewById(R.id.big_image2);
+            imagebtn = view.findViewById(R.id.imagebtn);
+            iconImage = view.findViewById(R.id.large);
             nameView = view.findViewById(R.id.name);
             descView = view.findViewById(R.id.desc);
 
-            clickableImage.setOnClickListener(parentView -> {
+            imagebtn.setOnClickListener(parentView -> {
                 AlertDialog.Builder builder = new AlertDialog.Builder(parentView.getContext());
                 builder.setTitle("Profile");
                 builder.setMessage(nameView.getText());
